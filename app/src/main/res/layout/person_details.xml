@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg_black">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/person_bck"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:background="@drawable/round_edge"
+        android:textColor="@color/colorGold"
+        android:textColorHint="@color/colorGold"
+        android:hint="@string/et_nameHint"
+        android:layout_marginStart="@dimen/dimen_30"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <com.doublep.splitter.customViews.TextViewQuestion
+        android:id="@+id/iv_addBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_2"
+        android:gravity="center"
+       android:drawableTop="@drawable/btn_add"
+        android:text="@string/txt_add"
+        android:textColor="@color/colorGold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_name"
+        app:layout_constraintTop_toTopOf="@id/et_name" />
+
+    <com.doublep.splitter.customViews.TextViewQuestion
+        android:id="@+id/tv_submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:gravity="center"
+        android:background="@drawable/round_edge"
+        android:textColor="@color/colorGold"
+        android:text="@string/txt_submitBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tv_nameList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/dimen_10"
+        android:textSize="@dimen/dimen_18"
+        android:textColor="@color/colorGold"
+        android:padding="@dimen/dimen_10"
+        tools:text="1) gabbar"
+        app:layout_constraintBottom_toTopOf="@id/tv_submit"
+        app:layout_constraintEnd_toEndOf="@id/et_name"
+        app:layout_constraintStart_toStartOf="@id/et_name"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <com.doublep.splitter.customViews.TextViewQuestion
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="@string/app_name"
+        android:textColor="@color/colorGold"
+        android:textSize="@dimen/dimen_22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

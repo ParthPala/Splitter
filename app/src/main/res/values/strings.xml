@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Splitter</string>
+
+    <string name="et_nameHint">Enter name of person</string>
+    <string name="txt_add">Add Name</string>
+    <string name="txt_submitBtn">SUBMIT</string>
+
+    <string name="txt_details">Details for Split</string>
+    <string name="txt_what">WHAT</string>
+    <string name="txt_price">HOW MUCH?</string>
+    <string name="txt_selectPeople">Select People</string>
+    <string name="txt_addNewButton">Add +</string>
+    <string name="txt_calculateButton">Calculate</string>
+
+    <string name="txt_calculationTitle">Split Summary</string>
+
+    <string name="txt_nameDash">%1$s :- </string>
+    <string name="txt_splitDetails"> ( %1$s - Rs. %2$d ) </string>
+    <string name="txt_totalEquals">= Rs. %1$d </string>
+
+    <string name="txt_selectPeopleTitle">Select People</string>
+    <string name="txt_selectedPeople">Selected People are :- </string>
+
+    <string name="txt_logo_line">Split exercise and Splitting the bill both are helpful physically and financially.</string>
+
+</resources>
